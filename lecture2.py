@@ -1,6 +1,7 @@
 # lecture 2
 
 ## adding comment
+## add another comment
 
 ''' the argument to the input function is a string
  in this example we provide a string literal, but it can be
