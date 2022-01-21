@@ -1,5 +1,7 @@
 # lecture 2
 
+## adding comment
+
 ''' the argument to the input function is a string
  in this example we provide a string literal, but it can be
  an expression that evaluates to a string'''
@@ -13,7 +15,7 @@ print("You\'re summing", first_str, "and", second, "\n\tto get", first_int+secon
 print(f'You\'re summing {first_int} and {second} \n\tto get {first_int + second}')
 #print("You\'re summing", first_int, "and", second, "\n\tto get", first_str+second) # this would be a TypeError
 
-print('\n\n')
+print('\n')
 
 repeat = input('How many times would you like to say \'Python\'? ')
 #repeat = 10  # uncomment this line to set the variable in your code and not use user input
