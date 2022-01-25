@@ -64,3 +64,34 @@ def sqrt3(inputnum):
     return (index + remainder/odd) # for 18, 4+2/9'''
 
 #print(sqrt3(input_prompt))
+
+
+### Newton's algorithm for square root - see case study for chapter 3
+
+# guess = ( guess + inputnum/guess )/2
+
+TOLERANCE = .0001
+GUESS = 20
+
+def sqrt4(inputnum, guess = GUESS, tolerance = TOLERANCE):
+    print('using while true loop with break')
+    while True:
+        previous_guess = guess
+        guess = ( guess + inputnum/guess )/2
+        difference = abs(previous_guess-guess)
+        if (difference < tolerance):
+            break
+    return guess
+
+def sqrt5(inputnum, guess = GUESS, tolerance = TOLERANCE):
+    print('using conditional while loop')
+    difference = guess
+    while (difference > tolerance):
+        previous_guess = guess
+        guess = ( guess + inputnum/guess )/2
+        difference = abs(previous_guess-guess)
+    return guess
+
+print( sqrt5(input_prompt) )
+
+
